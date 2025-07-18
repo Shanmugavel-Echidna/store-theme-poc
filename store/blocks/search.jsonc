@@ -62,8 +62,8 @@
 
   "search-result-layout.desktop": {
     "children": [
-      "flex-layout.row#searchbread",
       "flex-layout.row#searchtitle",
+      "flex-layout.row#searchbread",
       "flex-layout.row#result"
     ],
     "props": {
@@ -80,7 +80,27 @@
     }
   },
   "flex-layout.row#searchtitle": {
-    "children": ["search-title.v2"]
+    "children": ["search-title.v2",  "flex-layout.row#pdp-head-text"],
+    "props": {
+      "blockClass": "searchTitleSection"
+    }
+  },
+  "flex-layout.row#pdp-head-text": {
+    "props": {
+      "colGap": 0,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "marginBottom": 4
+    },
+    "children": [ "rich-text#summary-text"
+    ]
+  },
+  "rich-text#summary-text": {
+    "props": {
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eleifend nunc ante, et varius felis lacinia at. Suspendisse sagittis ullamcorper velit, ac volutpat sapien lobortis a. Mauris ut libero nec ligula tincidunt pretium.",
+      "textColor": "c-auto",
+      "blockClass": "card-text"
+    }
   },
   "flex-layout.row#result": {
     "children": ["flex-layout.col#filter", "flex-layout.col#content"],

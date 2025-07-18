@@ -24,18 +24,46 @@
 }
 
 .brandName {
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 400 !important;
+  font-size: 16px;
   color: #2E2E2E;
+  font-weight: 500;
+  line-height: 1.6rem;
+  text-align: left;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  margin-bottom: .7rem;
+  position: relative;
+}
+.brandName:hover {
+  color: #a75a48;
 }
 
 .container {
   text-align: start;
 }
-
-.imageContainer {
+.imageContainer .image {
   text-align: center;
+  border: 0.01rem solid transparent;
+  /* transform: scale(1); */
+  padding: 0 5px;
+  transition: 0.3s transform ease-in;
 }
+
+.imageContainer:hover .image {
+  /* transform: scale(1.02); */
+  transition: 0.3s transform ease-out;
+  border: 0.01rem solid #e6e3df;
+}
+.imageWrapper {
+  border: none;
+}
+
+.element :global(.vtex-button) {
+  background-color: transparent;
+  border: none;
+}
+
 
 .image {
   border-radius: 0.25rem;

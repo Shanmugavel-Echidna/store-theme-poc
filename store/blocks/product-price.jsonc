@@ -16,8 +16,8 @@
       "colGap": 2,
       "preserveLayoutOnMobile": true,
       "preventHorizontalStretch": true,
-      "marginBottom": 2,
-      "marginTop": 5
+      "marginBottom": 0,
+      "marginTop": 0
     },
     "children": [
       "product-list-price",
