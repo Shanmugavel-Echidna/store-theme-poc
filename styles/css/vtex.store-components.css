@@ -64,6 +64,9 @@
 .skuSelectorContainer {
   margin: 1rem 0;
 }
+.imageElement--banner{
+  width: 100%;
+}
 
 @media only screen and (min-width: 640px) {
   .newsletter .container {
@@ -83,6 +86,7 @@
     max-height: 600px;
   }
 }
+
 
 .productImagesContainer--quickview .carouselContainer {
   justify-content: flex-start;
