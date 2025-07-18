@@ -17,6 +17,33 @@
   }
 }
 
+.flexRow--searchTitleSection {
+  padding: 65px 20px 50px;
+  margin-bottom: 50px;
+  text-align: center;
+  background: #faf9f9;
+}
+.flexCol--filterCol {
+  max-width: 500px;
+  min-width: 230px;
+  height: 500px;
+    border: 1px solid #e6e3df;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flexRowContent--searchTitleSection{
+  flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.flexRowContent--searchTitleSection :global(.vtex-rich-text-0-x-paragraph--card-text){
+    font-size: 14px;
+}
+.flexRowContent--summaryLeftListDesktop {
+  display: flex;
+  align-items: center;
+}
 .flexRowContent--menu-link {
   background-color: #03044e;
   color: #fff;

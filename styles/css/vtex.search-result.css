@@ -8,15 +8,32 @@
   background-color: #3F3F40;
   color: #FFFFFF;
 }
+.searchResultContainer{
+  padding: 0 55px;
+}
+.totalProducts--layout{
+  padding-top: 5px;
+}
+.totalProducts--layout,.orderByButton {
+  padding-top: 0;
+}
 
 .galleryLayoutSwitcher {
   border-radius: 4px 4px 4px 4px;
   justify-content: center;
   overflow: hidden;
   width: auto !important;
-  align-self: center
+  align-self: center;
+  padding-bottom: 10px;
+}
+.filter__container--priceRange {
+  display: none;
 }
 
+.galleryTitle--layout {
+  text-transform: capitalize;
+  font-weight: 400;
+}
 .galleryItem--list {
   border-bottom: 1px #E7E9EE solid;
 }

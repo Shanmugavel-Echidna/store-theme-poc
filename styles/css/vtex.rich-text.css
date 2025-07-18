@@ -3,7 +3,17 @@
   text-align: center;
   justify-content: center;
 }
+.wrapper--card-text {
+  margin: 0;
+  font-size: 14px;
+  padding-right: 20px;
+  color: #3f3f40;
+}
 
+.container--card-text {
+  text-align: center;
+  width: 715px;
+}
 .container--shelfTitle {
   color: #727273;
   justify-content: center;
