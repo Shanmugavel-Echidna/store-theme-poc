@@ -1,0 +1,63 @@
+.productTitle h1 {
+    font-size: 32px;
+    font-weight: 500;
+    color: #49412F;
+}
+.productPrice {
+    font-size: 18px;
+    color: #000000;
+}
+.selectOptionContainer {
+    display: flex;
+    border: 2px solid #3b2d1f;
+    margin: 20px;
+}
+.selectOptionContainer .sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    border: 1px solid #999;
+    padding: 10px;
+    min-width: 150px;
+}
+.selectOptionContainer .sidebarItem {
+    margin: 10px 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+.selectOptionContainer .sidebarItem.active{
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #3b2d1f;
+}
+.selectOptionContainer .sidebar {
+    width: 160px;
+    border-right: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+.selectOptionContainer .sidebarItem {
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+.selectOptionContainer .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 15px;
+    padding: 20px;
+    flex: 1;
+  }
+.selectOptionContainer .gridItem {
+    border: 1px solid #444;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #fff;
+    transition: 'background 0.3s';
+  }
