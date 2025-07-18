@@ -3,12 +3,13 @@
     "children": [
       "stack-layout#prodsum",
       "product-summary-name",
-      "flex-layout.col#productRating",
-      "product-summary-space",
-      "product-list-price#summary",
-      "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
-      "add-to-cart-button"
+      // "flex-layout.col#productRating",
+      // "product-summary-space",
+      "product-list-price#summary"
+      // "flex-layout.row#selling-price-savings",
+      // "product-installments#summary",
+      // "flex-layout.row#pdp-head-text"
+      // "add-to-cart-button"
     ]
   },
   "flex-layout.col#productRating": {
@@ -18,6 +19,7 @@
     "children": ["product-rating-inline"]
   },
 
+ 
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
