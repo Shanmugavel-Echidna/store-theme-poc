@@ -64,9 +64,16 @@
 .skuSelectorContainer {
   margin: 1rem 0;
 }
+
+.imageElement--banner{
+  width: 100%;
+}
+
+=======
 .productBrandName--summaryListDesktop{
   display: none;
 }
+
 @media only screen and (min-width: 640px) {
   .newsletter .container {
     padding: 140px;
@@ -85,6 +92,7 @@
     max-height: 600px;
   }
 }
+
 
 .productImagesContainer--quickview .carouselContainer {
   justify-content: flex-start;

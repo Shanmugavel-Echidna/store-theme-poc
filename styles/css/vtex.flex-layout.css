@@ -115,7 +115,9 @@
   height: 66% !important;
   overflow-x: hidden;
 }
-
+.flexRow--footer-row{
+  background-color: #FFF8ED;
+}
 .flexColChild--quickviewDetails:last-child {
   height: 34% !important;
 }
