@@ -99,9 +99,12 @@
       "rowGap": 0
     },
     "children": [
+      "flex-layout.row#product-name",
+      "flex-layout.row#list-price-savings",
+      "flex-layout.row#selling-price",
+      "sku-selector",
       "pdp-page",
       "product-quantity",
-      "sku-selector",
       "flex-layout.row#buy-button",
       "flex-layout.col#productAssemby"
       // "flex-layout.row#product-name",

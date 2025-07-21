@@ -27,56 +27,60 @@ const PdpPage = () => {
     console.log("Assembly Items Map:", assemblies);
   }, [productContextValue]);
 
-  const productName = productContextValue?.product?.productName;
-  const productPrice = productContextValue?.selectedItem?.sellers?.[0]?.commertialOffer?.Price;
+//   const productName = productContextValue?.product?.productName;
+//   const productPrice = productContextValue?.selectedItem?.sellers?.[0]?.commertialOffer?.Price;
 
   return (
     <>
       <div className={styles.pdpRightCol}>
-        <div className={styles.productTitle}>
+        {/* <div className={styles.productTitle}>
           <h1>{productName}</h1>
-        </div>
-        <div className={styles.productPrice}>
+        </div> */}
+        {/* <div className={styles.productPrice}>
           <p>{productPrice ? `$${productPrice}` : "$0.00"}</p>
-        </div>
+        </div> */}
 
-        <div className={styles.selectOptionContainer}>
-          {/* Sidebar Items */}
-          <div className={styles.sidebar}>
-            {sidebarItems.map((item, index) => {
-              // Extract a clean label from the VTEX key
-              const label = item
-                .split(".")
-                .pop()
-                .split("_")[0]
-                .split("-")[0]
-                .trim();
+        {sidebarItems.length > 0 && ( 
 
-              return (
-                <div
-                  key={index}
-                  className={
-                    item === selectedOption
-                      ? `${styles.sidebarItem} ${styles.active}`
-                      : styles.sidebarItem
-                  }
-                  onClick={() => setSelectedOption(item)}
-                >
-                  {label}
-                </div>
-              );
-            })}
-          </div>
+            <div className={styles.selectOptionContainer}>
+             {/* Sidebar Items */}
+             <div className={styles.sidebar}>
+               {sidebarItems.map((item, index) => {
+                 // Extract a clean label from the VTEX key
+                 const label = item
+                   .split(".")
+                   .pop()
+                   .split("_")[0]
+                   .split("-")[0]
+                   .trim();
+   
+                 return (
+                   <div
+                     key={index}
+                     className={
+                       item === selectedOption
+                         ? `${styles.sidebarItem} ${styles.active}`
+                         : styles.sidebarItem
+                     }
+                     onClick={() => setSelectedOption(item)}
+                   >
+                     {label}
+                   </div>
+                 );
+               })}
+             </div>
+   
+             {/* Grid Items */}
+             <div className={styles.gridContainer}>
+               {(optionData[selectedOption] || []).map((option, index) => (
+                 <div key={index} className={styles.gridItem}>
+                   {option.name}
+                 </div>
+               ))}
+             </div>
+           </div>
 
-          {/* Grid Items */}
-          <div className={styles.gridContainer}>
-            {(optionData[selectedOption] || []).map((option, index) => (
-              <div key={index} className={styles.gridItem}>
-                {option.name}
-              </div>
-            ))}
-          </div>
-        </div>
+        )}
       </div>
     </>
   );
