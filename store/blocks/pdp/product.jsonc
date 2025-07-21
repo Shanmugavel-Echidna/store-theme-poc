@@ -2,13 +2,13 @@
   "store.product": {
     "children": [
       "flex-layout.row#product-breadcrumb",
-      "condition-layout.product#availability",
-      "flex-layout.row#description",
-      "flex-layout.row#specifications-title",
-      "product-specification-group#table",
-      "shelf.relatedProducts",
-      "product-reviews",
-      "product-questions-and-answers"
+      "condition-layout.product#availability"
+      // "flex-layout.row#description",
+      // "flex-layout.row#specifications-title",
+      // "product-specification-group#table",
+      // "shelf.relatedProducts",
+      // "product-reviews",
+      // "product-questions-and-answers"
     ]
   },
   "flex-layout.row#specifications-title": {
@@ -77,7 +77,7 @@
   "flex-layout.col#stack": {
     "children": ["stack-layout"],
     "props": {
-      "width": "60%",
+      "width": "45%",
       "rowGap": 0
     }
   },
@@ -99,7 +99,11 @@
       "rowGap": 0
     },
     "children": [
-      "pdp-page"
+      "pdp-page",
+      "product-quantity",
+      "sku-selector",
+      "flex-layout.row#buy-button",
+      "flex-layout.col#productAssemby"
       // "flex-layout.row#product-name",
       // "product-rating-summary",
       // "flex-layout.row#list-price-savings",
@@ -117,7 +121,30 @@
       // "share#default"
     ]
   },
-
+  "flex-layout.col#productAssemby": {
+    "props": {
+      "preventVerticalStretch": true,
+      "rowGap": 0,
+      "blockClass": "pdpRightContainer"
+    },
+    "children": [
+      "flex-layout.row#product-name",
+      "product-rating-summary",
+      "flex-layout.row#list-price-savings",
+      "flex-layout.row#selling-price",
+      "product-installments",
+      "product-separator",
+      "product-identifier.product",
+      "sku-selector",
+      "product-quantity",
+      "product-assembly-options",
+      "product-gifts",
+      "flex-layout.row#buy-button",
+      "availability-subscriber",
+      "shipping-simulator",
+      "share#default"
+    ]
+  },
   "flex-layout.row#product-name": {
     "props": {
       "marginBottom": 3

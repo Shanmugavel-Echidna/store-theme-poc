@@ -15,34 +15,25 @@
 .selectOptionContainer .sidebar {
     display: flex;
     flex-direction: column;
-    margin-right: 20px;
-    border: 1px solid #999;
-    padding: 10px;
-    min-width: 150px;
-}
+    width: 160px;
+    border-right: 2px solid #3b2d1f;
+    background-color: #ffffff;
+    margin-right: 0;
+  }
 .selectOptionContainer .sidebarItem {
-    margin: 10px 0;
     font-size: 14px;
     cursor: pointer;
+    color:#49412F;
+    border-bottom: 1px solid #49412F;
+    padding: 10px;
 }
 .selectOptionContainer .sidebarItem.active{
-    margin-bottom: 10px;
     font-size: 14px;
     cursor: pointer;
     font-weight: bold;
-    color: #3b2d1f;
+    background-color:#49412F;
+    color: #FFF8ED;
 }
-.selectOptionContainer .sidebar {
-    width: 160px;
-    border-right: 1px solid #ccc;
-    padding: 10px;
-    background-color: #f9f9f9;
-  }
-.selectOptionContainer .sidebarItem {
-    margin-bottom: 10px;
-    font-size: 14px;
-    cursor: pointer;
-  }
 .selectOptionContainer .gridContainer {
     display: grid;
     grid-template-columns: repeat(3, 150px);
@@ -51,13 +42,16 @@
     flex: 1;
   }
 .selectOptionContainer .gridItem {
-    border: 1px solid #444;
+    border: 1px solid #49412F;
     height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 400;
     cursor: pointer;
     background-color: #fff;
     transition: 'background 0.3s';
+    padding: 10px;
+    text-align: center;
   }
